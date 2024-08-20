@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Importing necessary JavaFX controls -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Define a VBox as the root layout for the CharacterView -->
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.rickmorty.controller.CharacterController">
+
+    <!-- TextField for entering the name of the character to search -->
+    <!-- promptText provides a hint to the user about what to enter -->
+    <TextField fx:id="searchField" promptText="Enter character name" />
+
+    <!-- Button to trigger the search action -->
+    <!-- No onAction attribute here; the event handling is done in the controller -->
+    <Button fx:id="searchButton" text="Search" />
+
+    <!-- ListView to display the list of characters matching the search query -->
+    <!-- This will be populated dynamically by the controller -->
+    <ListView fx:id="characterListView" />
+</VBox>

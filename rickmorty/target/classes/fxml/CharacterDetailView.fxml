@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Importing necessary JavaFX controls -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextArea?>
+
+<!-- Define a VBox as the root layout for the CharacterDetailView -->
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.rickmorty.controller.CharacterDetailController" style="-fx-background-color: #f0f0f0;">
+
+    <!-- HBox to display placeholder and actual character's name -->
+    <HBox>
+        <Label text="Name: " style="-fx-font-weight: bold;"/>
+        <Label fx:id="nameLabel" text="Character Name" style="-fx-text-fill: gray;"/>
+    </HBox>
+
+    <!-- HBox to display placeholder and actual character's species -->
+    <HBox>
+        <Label text="Species: " style="-fx-font-weight: bold;"/>
+        <Label fx:id="speciesLabel" text="Character Species" style="-fx-text-fill: gray;"/>
+    </HBox>
+
+    <!-- HBox to display placeholder and actual character's status -->
+    <HBox>
+        <Label text="Status: " style="-fx-font-weight: bold;"/>
+        <Label fx:id="statusLabel" text="Character Status" style="-fx-text-fill: gray;"/>
+    </HBox>
+
+    <!-- HBox to display placeholder and actual character's ID -->
+    <HBox>
+        <Label text="ID: " style="-fx-font-weight: bold;"/>
+        <Label fx:id="idLabel" text="Character ID" style="-fx-text-fill: gray;"/>
+    </HBox>
+
+    <!-- HBox to display placeholder and actual character's location -->
+    <HBox>
+        <Label text="Location: " style="-fx-font-weight: bold;"/>
+        <Label fx:id="locationLabel" text="Character Location" style="-fx-text-fill: gray;"/>
+    </HBox>
+
+    <!-- TextArea to display the list of episodes the character appears in,
+         wrapText ensures text wraps within the area, and editable is set to false to make it read-only -->
+    <TextArea fx:id="episodesArea" wrapText="true" editable="false" text="Episodes will be listed here..." style="-fx-text-fill: gray;"/>
+
+    <!-- ImageView to display the character's image -->
+    <ImageView fx:id="characterImageView" />
+
+    <!-- Button to go back to the previous view, triggers handleBackButton method on click -->
+    <Button fx:id="backButton" text="Back" onAction="#handleBackButton" />
+</VBox>

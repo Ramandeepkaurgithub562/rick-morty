@@ -1,0 +1,184 @@
+/* General root styling */
+.root {
+    -fx-padding: 15; /* Add padding around the root element */
+    -fx-background-color: #F4F4F9; /* Light background color for the root */
+    -fx-font-family: Arial, sans-serif; /* Set the font family */
+}
+
+/* TextField and Button styling */
+.text-field, .button {
+    -fx-padding: 12; /* Padding inside the text field and button */
+    -fx-font-size: 16; /* Font size for text field and button */
+    -fx-border-radius: 8; /* Rounded corners for the border */
+    -fx-background-radius: 8; /* Rounded corners for the background */
+    -fx-border-color: #D0D0D0; /* Light gray border color */
+    -fx-border-width: 1; /* Border width */
+}
+
+/* ListView styling */
+.list-view {
+    -fx-border-radius: 8; /* Rounded corners for the border */
+    -fx-background-radius: 8; /* Rounded corners for the background */
+    -fx-border-color: #D0D0D0; /* Light gray border color */
+    -fx-border-width: 1; /* Border width */
+    -fx-background-color: #FFFFFF; /* White background color */
+    -fx-padding: 5; /* Padding inside the ListView */
+}
+
+/* ImageView styling */
+.image-view {
+    -fx-padding: 12; /* Padding inside the ImageView */
+    -fx-border-radius: 8; /* Rounded corners for the border */
+    -fx-background-radius: 8; /* Rounded corners for the background */
+    -fx-border-color: #D0D0D0; /* Light gray border color */
+    -fx-border-width: 1; /* Border width */
+    -fx-background-color: #FFFFFF; /* White background color */
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #007ACC; /* Blue background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-effect: dropshadow(gaussian, #005A9C, 5, 0, 0, 1); /* Drop shadow effect */
+}
+
+.button:hover {
+    -fx-background-color: #005A9C; /* Darker blue background on hover */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+}
+
+/* Focus state for TextField and Button */
+.text-field:focused, .button:focused {
+    -fx-border-color: #007ACC; /* Blue border color on focus */
+    -fx-border-width: 2; /* Border width on focus */
+}
+
+/* Header label styling */
+.header-label {
+    -fx-font-size: 18; /* Font size */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-text-fill: #333333; /* Dark gray text color */
+}
+
+/* Info label styling */
+.info-label {
+    -fx-font-size: 14; /* Font size */
+    -fx-text-fill: #555555; /* Gray text color */
+}
+
+/* TextArea styling */
+.text-area {
+    -fx-padding: 10; /* Padding inside the TextArea */
+    -fx-border-color: #D0D0D0; /* Light gray border color */
+    -fx-border-radius: 5; /* Rounded corners for the border */
+    -fx-background-radius: 5; /* Rounded corners for the background */
+}
+
+/* CharacterView specific styles */
+.search-field {
+    -fx-padding: 10; /* Padding inside the search field */
+    -fx-border-radius: 5; /* Rounded corners for the border */
+    -fx-background-radius: 5; /* Rounded corners for the background */
+    -fx-font-size: 14; /* Font size */
+}
+
+.search-button {
+    -fx-padding: 10; /* Padding inside the search button */
+    -fx-background-color: #007ACC; /* Blue background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-border-radius: 5; /* Rounded corners for the border */
+    -fx-background-radius: 5; /* Rounded corners for the background */
+}
+
+.search-button:hover {
+    -fx-background-color: #005A9C; /* Darker blue background on hover */
+}
+
+.character-list {
+    -fx-border-radius: 5; /* Rounded corners for the border */
+    -fx-background-radius: 5; /* Rounded corners for the background */
+    -fx-padding: 5; /* Padding inside the list */
+}
+
+/* CharacterDetailView specific styles */
+.character-image {
+    -fx-border-radius: 10; /* Rounded corners for the border */
+    -fx-background-radius: 10; /* Rounded corners for the background */
+    -fx-border-color: #D0D0D0; /* Light gray border color */
+    -fx-border-width: 1; /* Border width */
+}
+
+.header-label {
+    -fx-font-size: 18; /* Font size */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-text-fill: #333333; /* Dark gray text color */
+}
+
+.info-label {
+    -fx-font-size: 14; /* Font size */
+    -fx-text-fill: #555555; /* Gray text color */
+}
+
+.episodes-area {
+    -fx-padding: 10; /* Padding inside the TextArea */
+    -fx-border-color: #D0D0D0; /* Light gray border color */
+    -fx-border-radius: 5; /* Rounded corners for the border */
+    -fx-background-radius: 5; /* Rounded corners for the background */
+}
+
+.back-button {
+    -fx-padding: 10; /* Padding inside the back button */
+    -fx-background-color: #007ACC; /* Blue background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-border-radius: 5; /* Rounded corners for the border */
+    -fx-background-radius: 5; /* Rounded corners for the background */
+}
+
+.back-button:hover {
+    -fx-background-color: #005A9C; /* Darker blue background on hover */
+}
+
+/* CharacterDetailView.css */
+
+/* Style for the VBox root container */
+.root {
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+/* Style for HBox containers */
+.root HBox {
+    -fx-spacing: 5px;
+}
+
+/* Style for Label elements */
+.root Label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+/* Style for TextArea */
+.root TextArea {
+    -fx-pref-height: 100px;
+    -fx-font-size: 12px;
+    -fx-text-fill: #333;
+}
+
+/* Style for ImageView */
+.root ImageView {
+    -fx-fit-width: 200px;
+    -fx-fit-height: 200px;
+    -fx-preserve-ratio: true;
+    -fx-align: center;
+}
+
+/* Style for Button */
+.root Button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+}
